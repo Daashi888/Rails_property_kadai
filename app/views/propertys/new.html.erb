@@ -1,2 +1,23 @@
-<h1>Propertys#new</h1>
-<p>Find me in app/views/propertys/new.html.erb</p>
+<%= form_with(model: Property.new, local: true) do |form| %>
+  <div class="property_name">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+  <div class="property_rent">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <div class="property_address">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <div class="property_age">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <div class="property_remarks">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div>
+  <%= form.submit %>
+<% end %>
